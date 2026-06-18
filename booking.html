@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Repair — Mobile Fix Lab</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">●</span> Mobile Fix Lab
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Repair Services</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="booking.html" class="nav-cta">Book Now</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Home</a>
+      <a href="services.html">Repair Services</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="overline">Book a repair</p>
+      <h1>Schedule your<br><em style="font-style:italic; background: linear-gradient(135deg, #5b8dee, #7c6af7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">repair appointment.</em></h1>
+      <p>Tell us your device and issue — we'll have parts ready so your repair is as fast as possible.</p>
+    </div>
+  </div>
+
+  <!-- Booking Body -->
+  <div class="booking-layout">
+
+    <!-- Left: Info -->
+    <div class="booking-info">
+      <h3>Shop Details</h3>
+      <div class="info-list">
+        <div class="info-item">
+          <span class="ii-icon">📍</span>
+          <span><strong>Location</strong>Charlotte / Mint Hill / Matthews Area</span>
+        </div>
+        <div class="info-item">
+          <span class="ii-icon">📞</span>
+          <span><strong>Phone</strong>(704) 555-1234</span>
+        </div>
+        <div class="info-item">
+          <span class="ii-icon">✉️</span>
+          <span><strong>Email</strong>desalite017@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <span class="ii-icon">🕐</span>
+          <span><strong>Hours</strong>Mon – Sat: 10:00 AM – 7:00 PM</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 40px; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);">
+        <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); margin-bottom: 14px;">What to expect</div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:24px;height:24px;border-radius:50%;background:var(--accent);color:white;font-size:0.7rem;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">1</div>
+            <div style="font-size:0.85rem;color:var(--text-muted);line-height:1.5;"><strong style="color:var(--text);display:block;font-size:0.82rem;">Submit request</strong>Fill out the form with your device info.</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:24px;height:24px;border-radius:50%;background:var(--accent);color:white;font-size:0.7rem;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">2</div>
+            <div style="font-size:0.85rem;color:var(--text-muted);line-height:1.5;"><strong style="color:var(--text);display:block;font-size:0.82rem;">We confirm</strong>We'll reach out to confirm your appointment slot.</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:24px;height:24px;border-radius:50%;background:var(--accent);color:white;font-size:0.7rem;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">3</div>
+            <div style="font-size:0.85rem;color:var(--text-muted);line-height:1.5;"><strong style="color:var(--text);display:block;font-size:0.82rem;">Get repaired</strong>Drop in and we'll have your device ready fast.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="booking-form-wrap">
+      <form class="booking-form" id="bookingForm" action="https://formsubmit.co/desalite017@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New booking request - Mobile Fix Lab">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="b-name">Name *</label>
+            <input type="text" id="b-name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="b-phone">Phone</label>
+            <input type="tel" id="b-phone" name="phone" placeholder="(704) 000-0000" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="b-email">Email *</label>
+          <input type="email" id="b-email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="b-device">Device Model *</label>
+            <input type="text" id="b-device" name="device" placeholder="e.g. iPhone 15 Pro" required />
+          </div>
+          <div class="form-group">
+            <label for="b-repair">Repair Needed *</label>
+            <input type="text" id="b-repair" name="repair_needed" placeholder="e.g. Screen replacement" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="b-date">Preferred Date</label>
+          <input type="date" id="b-date" name="preferred_date" />
+        </div>
+
+        <div class="form-group">
+          <label for="b-notes">Additional Notes</label>
+          <textarea id="b-notes" name="notes" rows="4" placeholder="Any other details about your device or issue…"></textarea>
+        </div>
+
+        <button class="btn-submit" id="booking-submit" type="submit">Submit Booking Request</button>
+        <div id="booking-msg" class="form-feedback"></div>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">●</span> Mobile Fix Lab
+      </div>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Repair</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Mobile Fix Lab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
