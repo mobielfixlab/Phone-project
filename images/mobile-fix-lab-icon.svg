@@ -1,0 +1,33 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile Fix Lab icon</title>
+  <desc id="desc">Compact phone repair lab icon inside a blue circle.</desc>
+  <defs>
+    <linearGradient id="blue" x1="22" y1="18" x2="73" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20D6FF"/>
+      <stop offset="1" stop-color="#096BFF"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="31" y1="20" x2="55" y2="73" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071A2D"/>
+      <stop offset="1" stop-color="#020814"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="48" cy="48" r="38" fill="#ffffff" stroke="#0476BD" stroke-width="4"/>
+  <path d="M32 18H53C59.1 18 64 22.9 64 29V66C64 72.1 59.1 77 53 77H32C25.9 77 21 72.1 21 66V29C21 22.9 25.9 18 32 18Z" fill="url(#screen)" stroke="#071729" stroke-width="2"/>
+  <path d="M33 23H52C56.4 23 60 26.6 60 31V64C60 68.4 56.4 72 52 72H33C28.6 72 25 68.4 25 64V31C25 26.6 28.6 23 33 23Z" stroke="#ffffff" stroke-width="3.5"/>
+  <path d="M36 23H49C49 27.2 46.9 29 43.9 29H41.1C38.1 29 36 27.2 36 23Z" fill="#ffffff"/>
+
+  <path d="M9 47H22L26 36L31 61L39 30L45 59L49 47H55" stroke="url(#blue)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M62 47H73L77 42H88" stroke="url(#blue)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="88" cy="42" r="4.5" stroke="url(#blue)" stroke-width="3.8"/>
+
+  <path d="M57 47V55L45 76C43.5 78.6 45.4 82 48.4 82H75.6C78.6 82 80.5 78.6 79 76L67 55V47H71V41H53V47H57Z" fill="#061323" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M52 72L59 59C60.9 60.5 63.2 60.5 65 59L72 72C72.9 73.7 71.7 76 69.7 76H54.3C52.3 76 51.1 73.7 52 72Z" fill="url(#blue)"/>
+  <circle cx="62" cy="70" r="5.2" fill="#ffffff"/>
+  <path d="M62 62V78M54 70H70M56.4 64.4L67.6 75.6M67.6 64.4L56.4 75.6" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="62" cy="70" r="2.8" fill="#096BFF"/>
+
+  <circle cx="63" cy="30" r="3.2" fill="url(#blue)" stroke="#B9F4FF" stroke-width="1.2"/>
+  <circle cx="59" cy="39" r="2.7" fill="url(#blue)" stroke="#B9F4FF" stroke-width="1.2"/>
+  <circle cx="66" cy="39" r="2.4" fill="url(#blue)" stroke="#B9F4FF" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="980" height="310" viewBox="0 0 980 310" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile Fix Lab logo</title>
+  <desc id="desc">A phone, circuit line, lab flask, and Mobile Fix Lab wordmark.</desc>
+  <defs>
+    <linearGradient id="blue" x1="220" y1="32" x2="540" y2="235" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25D4FF"/>
+      <stop offset="1" stop-color="#0B69FF"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="185" y1="22" x2="380" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071729"/>
+      <stop offset="1" stop-color="#020816"/>
+    </linearGradient>
+    <filter id="glow" x="-30" y="-30" width="1040" height="320" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00BFFF" flood-opacity="0.65"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#001E3A" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <path d="M196 34H323C352.8 34 377 58.2 377 88V204C377 233.8 352.8 258 323 258H196C166.2 258 142 233.8 142 204V88C142 58.2 166.2 34 196 34Z" fill="url(#panel)"/>
+    <path d="M196 48H323C345.1 48 363 65.9 363 88V204C363 226.1 345.1 244 323 244H196C173.9 244 156 226.1 156 204V88C156 65.9 173.9 48 196 48Z" stroke="white" stroke-width="10"/>
+    <path d="M222 48H297C297 58.5 291.5 63 283 63H236C227.5 63 222 58.5 222 48Z" fill="white"/>
+    <path d="M244 68H296" stroke="#020816" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M24 162H136L151 126L174 213L207 76L230 209L245 159L259 159" stroke="url(#blue)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M377 162H424L437 143H472" stroke="url(#blue)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="501" cy="143" r="24" stroke="url(#blue)" stroke-width="13"/>
+
+    <path d="M336 149V173L288 249C281.4 259.3 288.8 273 301 273H421C433.2 273 440.6 259.3 434 249L386 173V149H403V129H319V149H336Z" fill="#031120"/>
+    <path d="M336 149V173L288 249C281.4 259.3 288.8 273 301 273H421C433.2 273 440.6 259.3 434 249L386 173V149H403V129H319V149H336Z" stroke="white" stroke-width="11" stroke-linejoin="round"/>
+    <path d="M324 232L351 187C355.5 191.5 361.2 194 369 194C376.1 194 382 191.8 389 188L416 232C419.2 237.2 415.4 244 409.2 244H330.8C324.6 244 320.8 237.2 324 232Z" fill="url(#blue)" opacity="0.9"/>
+    <circle cx="361" cy="225" r="19" fill="white"/>
+    <path d="M361 197V253M333 225H389M341.2 205.2L380.8 244.8M380.8 205.2L341.2 244.8" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="361" cy="225" r="11" fill="#0B69FF"/>
+    <circle cx="365" cy="86" r="8" fill="url(#blue)" stroke="#6EE7FF" stroke-width="2"/>
+    <circle cx="348" cy="119" r="12" fill="url(#blue)" stroke="#6EE7FF" stroke-width="2"/>
+    <circle cx="376" cy="141" r="9" fill="url(#blue)" stroke="#6EE7FF" stroke-width="2"/>
+    <circle cx="354" cy="154" r="7" fill="url(#blue)" stroke="#6EE7FF" stroke-width="2"/>
+    <circle cx="364" cy="199" r="7" fill="url(#blue)" stroke="#6EE7FF" stroke-width="2"/>
+    <circle cx="358" cy="231" r="9" fill="url(#blue)" stroke="#6EE7FF" stroke-width="2"/>
+
+    <path d="M462 208H936C951.5 208 964 220.5 964 236V248C964 263.5 951.5 276 936 276H462V208Z" fill="#031120" stroke="#0A2440" stroke-width="2"/>
+    <text x="480" y="258" font-family="Arial Black, Impact, sans-serif" font-size="60" font-weight="900" letter-spacing="2" fill="white">MOBILE</text>
+    <text x="735" y="258" font-family="Arial Black, Impact, sans-serif" font-size="60" font-weight="900" letter-spacing="2" fill="#00BFFF">FIX</text>
+    <text x="855" y="258" font-family="Arial Black, Impact, sans-serif" font-size="60" font-weight="900" letter-spacing="2" fill="white">LAB</text>
+    <path d="M482 286H538M842 286H919" stroke="#00BFFF" stroke-width="5" stroke-linecap="round"/>
+    <text x="558" y="294" font-family="Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="9" fill="white">REPAIR - DIAGNOSE - SOLVE</text>
+  </g>
+</svg>
