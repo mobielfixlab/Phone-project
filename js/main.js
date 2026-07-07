@@ -200,6 +200,8 @@
       return st;
     };
 
+    // full download only on the desktop scrub path — mobile fallback streams on demand
+    video.preload = 'auto';
     if (video.readyState >= 1) setupScrub();
     else video.addEventListener('loadedmetadata', setupScrub, { once: true });
     video.load();
@@ -323,15 +325,24 @@
       var btn = form.querySelector('button[type="submit"]');
       var success = document.querySelector('.form-success');
       if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
-      setTimeout(function () {
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      }).then(function (res) {
+        if (!res.ok) throw new Error('Request failed: ' + res.status);
         form.reset();
-        if (btn) { btn.disabled = false; btn.textContent = 'Book a Repair'; }
         if (success) {
           success.classList.add('show');
           success.setAttribute('tabindex', '-1');
           success.focus();
         }
-      }, 900);
+      }).catch(function () {
+        alert('Something went wrong sending your request. Please try again, or call (704) 615-4536.');
+      }).finally(function () {
+        if (btn) { btn.disabled = false; btn.textContent = 'Book a Repair'; }
+      });
     });
 
     // clear error state as user types
@@ -342,6 +353,15 @@
       });
     });
   }
+
+  /* ---------- Before / after comparison sliders ---------- */
+  document.querySelectorAll('.ba-slider').forEach(function (slider) {
+    var range = slider.querySelector('.ba-range');
+    if (!range) return;
+    var update = function () { slider.style.setProperty('--pos', range.value + '%'); };
+    range.addEventListener('input', update);
+    update();
+  });
 
   /* ---------- Footer year ---------- */
   var yearEl = document.querySelector('[data-year]');
