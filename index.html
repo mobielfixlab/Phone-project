@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mobile Fix Lab — Phone, Laptop &amp; Electronics Repair in Charlotte, NC</title>
-  <meta name="description" content="Expert repair for phones, laptops, iPads, Apple Watch, game consoles and more. Same-day screen and battery repairs in the Charlotte, Mint Hill & Matthews area. 90-day warranty on every repair." />
+  <meta name="description" content="Expert repair for phones, laptops, iPads, Apple Watch, game consoles and more. Same-day screen and battery repairs in the Charlotte, Mint Hill & Matthews area. 90-day warranty on most repairs." />
   <meta name="keywords" content="phone repair Charlotte, iPhone screen repair, laptop repair, iPad repair, Apple Watch repair, battery replacement, Mint Hill, Matthews" />
   <link rel="canonical" href="https://mobilefixlab.com/" />
 
@@ -19,8 +19,12 @@
   <meta name="twitter:title" content="Mobile Fix Lab — Electronics Repair" />
   <meta name="twitter:description" content="Same-day device repairs with a 90-day warranty. Charlotte, NC." />
   <meta name="twitter:image" content="https://mobilefixlab.com/images/phone2.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="geo.region" content="US-NC" />
+  <meta name="geo.placename" content="Charlotte" />
   <meta name="theme-color" content="#0B2447" />
-  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="icon" type="image/png" href="images/logo-nav.png" />
+  <link rel="apple-touch-icon" href="images/logo-nav.png" />
 
   <!-- JSON-LD structured data -->
   <script type="application/ld+json">
@@ -41,6 +45,11 @@
       "addressCountry": "US"
     },
     "areaServed": ["Charlotte NC", "Mint Hill NC", "Matthews NC"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -54,6 +63,41 @@
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tablet and iPad repair" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smartwatch repair" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Game console repair" } }
+    ]
+  }
+  </script>
+
+  <!-- FAQ structured data (keep in sync with the FAQ section below) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does a phone screen repair take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most phone screen replacements are finished in about 45 minutes. Batteries usually take around 30 minutes, and nearly all phone repairs are completed the same day." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an appointment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No — walk-ins are welcome Monday through Saturday, 10 AM to 7 PM. Booking online just guarantees your parts are on the bench before you arrive." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a warranty on repairs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most repairs are backed by a 90-day parts and labor warranty — we'll tell you exactly what's covered with your quote. If anything related to the repair goes wrong, bring it back and we'll make it right." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I lose my data during a repair?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Screen, battery and port repairs never touch your data, and we don't need your passcode for most jobs. Your device and data stay private and in-house." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much will my repair cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Diagnostics are always free. You get a firm quote up front and approve it before we open your device — iPhone screens start at $79 and batteries at $69." }
+      }
     ]
   }
   </script>
@@ -75,6 +119,7 @@
       <div class="nav-links">
         <a href="index.html" aria-current="page">Home</a>
         <a href="services.html">Services</a>
+        <a href="before-after.html">Before &amp; After</a>
         <a href="#pricing">Pricing</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
@@ -87,6 +132,7 @@
     <div class="nav-mobile" id="navMobile">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
+      <a href="before-after.html">Before &amp; After</a>
       <a href="#pricing">Pricing</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
@@ -112,7 +158,7 @@
             <a href="services.html" class="btn btn-ghost">Explore Services</a>
           </div>
           <ul class="hero-points">
-            <li>90-day warranty</li>
+            <li>90-day warranty on most repairs</li>
             <li>Free diagnostics</li>
             <li>Price-match guarantee</li>
           </ul>
@@ -129,6 +175,38 @@
         </div>
       </div>
     </header>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Same-Day Repairs</span>
+          <span class="marquee-item">iPhone Screen Repair</span>
+          <span class="marquee-item">Battery Replacement</span>
+          <span class="marquee-item">Laptop &amp; MacBook Repair</span>
+          <span class="marquee-item">iPad &amp; Tablet Repair</span>
+          <span class="marquee-item">Apple Watch Repair</span>
+          <span class="marquee-item">Game Console Repair</span>
+          <span class="marquee-item">Water Damage Recovery</span>
+          <span class="marquee-item">Free Diagnostics</span>
+          <span class="marquee-item">90-Day Warranty</span>
+          <span class="marquee-item">Walk-Ins Welcome</span>
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Same-Day Repairs</span>
+          <span class="marquee-item">iPhone Screen Repair</span>
+          <span class="marquee-item">Battery Replacement</span>
+          <span class="marquee-item">Laptop &amp; MacBook Repair</span>
+          <span class="marquee-item">iPad &amp; Tablet Repair</span>
+          <span class="marquee-item">Apple Watch Repair</span>
+          <span class="marquee-item">Game Console Repair</span>
+          <span class="marquee-item">Water Damage Recovery</span>
+          <span class="marquee-item">Free Diagnostics</span>
+          <span class="marquee-item">90-Day Warranty</span>
+          <span class="marquee-item">Walk-Ins Welcome</span>
+        </div>
+      </div>
+    </div>
 
     <!-- ============ STATS ============ -->
     <section class="stats" aria-label="Shop statistics">
@@ -263,7 +341,7 @@
           </div>
           <div class="step reveal">
             <h3>Tested &amp; guaranteed</h3>
-            <p>Full function test before pickup, backed by our 90-day parts and labor warranty.</p>
+            <p>Full function test before pickup — most repairs backed by our 90-day parts and labor warranty.</p>
           </div>
         </div>
       </div>
@@ -341,6 +419,9 @@
           <img class="reveal" src="images/phone2.png" alt="Microscope-assisted logic board soldering and diagnostics" loading="lazy" />
           <img class="reveal" src="images/phone3.png" alt="Close-up of precision tweezers over an open tablet" loading="lazy" />
         </div>
+        <p class="price-note" style="margin-top: var(--space-4);">
+          Want proof? <a href="before-after.html">Slide through real before &amp; after results →</a>
+        </p>
       </div>
     </section>
 
@@ -376,6 +457,38 @@
               <div><strong>Maria K.</strong><span>Charlotte · iPad screen</span></div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head center">
+          <span class="overline">FAQ</span>
+          <h2 id="faq-title">Questions we hear every day</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How long does a phone screen repair take?</summary>
+            <p>Most phone screen replacements are finished in about 45 minutes. Batteries usually take around 30 minutes, and nearly all phone repairs are completed the same day.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need an appointment?</summary>
+            <p>No — walk-ins are welcome Monday through Saturday, 10 AM to 7 PM. Booking online just guarantees your parts are on the bench before you arrive.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is there a warranty on repairs?</summary>
+            <p>Most repairs are backed by a 90-day parts and labor warranty — we'll tell you exactly what's covered with your quote. If anything related to the repair goes wrong, bring it back and we'll make it right.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Will I lose my data during a repair?</summary>
+            <p>No. Screen, battery and port repairs never touch your data, and we don't need your passcode for most jobs. Your device and data stay private and in-house.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How much will my repair cost?</summary>
+            <p>Diagnostics are always free. You get a firm quote up front and approve it before we open your device — <a href="#pricing">iPhone screens start at $79</a> and batteries at $69.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -460,6 +573,7 @@
           <h4>Pages</h4>
           <a href="index.html">Home</a>
           <a href="services.html">Services</a>
+          <a href="before-after.html">Before &amp; After</a>
           <a href="booking.html">Book a Repair</a>
           <a href="index.html#pricing">Pricing</a>
         </div>

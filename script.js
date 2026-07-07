@@ -68,6 +68,15 @@
     dateInput.min = new Date().toISOString().split("T")[0];
   }
 
+  /* ---------- Before / after comparison sliders ---------- */
+  document.querySelectorAll(".ba-slider").forEach((slider) => {
+    const range = slider.querySelector(".ba-range");
+    if (!range) return;
+    const update = () => slider.style.setProperty("--pos", range.value + "%");
+    range.addEventListener("input", update);
+    update();
+  });
+
   /* ---------- Forms: AJAX submit with inline feedback ---------- */
   function wireForm(form) {
     const feedback = form.querySelector(".form-feedback");
