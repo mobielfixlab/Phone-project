@@ -1,231 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Repair Services — Phones, Laptops, Tablets &amp; More | Mobile Fix Lab</title>
-  <meta name="description" content="Full list of repair services at Mobile Fix Lab: phone screens and batteries, laptop and MacBook repair, iPad glass, Apple Watch, game consoles, micro-soldering and data recovery." />
-  <link rel="canonical" href="https://mobilefixlab.com/services.html" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Mobile Fix Lab" />
-  <meta property="og:title" content="Repair Services | Mobile Fix Lab" />
-  <meta property="og:description" content="Phones, laptops, tablets, wearables, consoles — every repair we offer, explained." />
-  <meta property="og:url" content="https://mobilefixlab.com/services.html" />
-  <meta property="og:image" content="https://mobilefixlab.com/images/phone1.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="geo.region" content="US-NC" />
-  <meta name="geo.placename" content="Charlotte" />
-  <meta name="theme-color" content="#0B2447" />
-  <link rel="icon" type="image/png" href="images/logo-nav.png" />
-  <link rel="apple-touch-icon" href="images/logo-nav.png" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Mobile Fix Lab repair services",
-    "itemListElement": [
-      { "@type": "Service", "position": 1, "name": "Phone repair", "provider": { "@type": "ElectronicsStore", "name": "Mobile Fix Lab" } },
-      { "@type": "Service", "position": 2, "name": "Laptop and computer repair", "provider": { "@type": "ElectronicsStore", "name": "Mobile Fix Lab" } },
-      { "@type": "Service", "position": 3, "name": "Tablet and iPad repair", "provider": { "@type": "ElectronicsStore", "name": "Mobile Fix Lab" } },
-      { "@type": "Service", "position": 4, "name": "Smartwatch repair", "provider": { "@type": "ElectronicsStore", "name": "Mobile Fix Lab" } },
-      { "@type": "Service", "position": 5, "name": "Game console repair", "provider": { "@type": "ElectronicsStore", "name": "Mobile Fix Lab" } }
-    ]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Mobile Fix Lab | Mint Hill / Charlotte, NC</title>
+  <meta name="description" content="Screen repair, battery replacement, water damage treatment, charging port repair and more in Mint Hill / Charlotte, NC. See everything Mobile Fix Lab repairs.">
+  <link rel="icon" type="image/png" href="images/logo-nav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <nav class="nav" id="nav" aria-label="Main navigation">
-    <div class="nav-inner">
+  <!-- ======== NAV ======== -->
+  <header class="nav">
+    <div class="container nav-inner">
       <a href="index.html" class="nav-logo" aria-label="Mobile Fix Lab home">
-        <img class="logo-nav-img" src="images/logo-nav.png" alt="" />
+        <img src="images/logo-nav.png" alt="Mobile Fix Lab logo">
       </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html" aria-current="page">Services</a>
-        <a href="before-after.html">Before &amp; After</a>
-        <a href="index.html#pricing">Pricing</a>
-        <a href="index.html#reviews">Reviews</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="booking.html" class="nav-cta">Book a Repair</a>
-      </div>
-      <button class="nav-hamburger" id="hamburger" aria-expanded="false" aria-controls="navMobile" aria-label="Open menu">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html#book" class="btn btn-primary">Book a Repair</a></li>
+      </ul>
     </div>
-    <div class="nav-mobile" id="navMobile">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="before-after.html">Before &amp; After</a>
-      <a href="index.html#pricing">Pricing</a>
-      <a href="index.html#reviews">Reviews</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="booking.html" class="nav-cta">Book a Repair</a>
-    </div>
-  </nav>
+  </header>
 
-  <main id="main">
-
-    <header class="page-hero">
+  <main>
+    <!-- ======== PAGE HERO ======== -->
+    <section class="page-hero">
+      <div class="hero-blob b1" aria-hidden="true"></div>
       <div class="container">
-        <span class="overline">Repair services</span>
-        <h1>Every device.<br /><em>Every common failure.</em></h1>
-        <p>If it powers on wrong, charges wrong, or doesn't power on at all — bring it in. Free diagnostics on everything, and you approve the quote before we start.</p>
+        <span class="eyebrow reveal">Services</span>
+        <h1 class="display-lg reveal" data-delay="0.06">If it has a circuit,<br>we can <span class="text-gradient">fix it.</span></h1>
+        <p class="lead reveal" data-delay="0.12">Transparent pricing, quality parts, and a 90-day warranty on most repairs. Free diagnostics on most repairs — you'll know the price before we start.</p>
       </div>
-    </header>
+    </section>
 
-    <div class="container">
+    <!-- ======== SERVICES GRID ======== -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card reveal" data-tilt>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 19h2M9 6l6 7"/></svg>
+            </div>
+            <h3>Screen Repair</h3>
+            <p>Cracked glass, dead pixels, ghost touch, OLED burn-in. Premium panels fitted with factory-tight tolerances — most done in under an hour.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">From ~45 min · phones, tablets &amp; laptops</p>
+          </article>
 
-      <!-- Phones -->
-      <section class="service-block" id="phones" aria-labelledby="phones-title">
-        <div class="sb-media reveal">
-          <img src="images/phone1.png" alt="Phone screen and battery replacement work at the bench" loading="lazy" />
-        </div>
-        <div class="sb-copy">
-          <span class="overline">Smartphones</span>
-          <h2 id="phones-title">Phone repair — iPhone, Samsung, Pixel &amp; more</h2>
-          <p>Our bread and butter. Most phone repairs are completed the same day, and screens or batteries are usually done while you wait.</p>
-          <div class="sb-tags">
-            <span>Screen &amp; glass</span><span>Battery</span><span>Charging port</span>
-            <span>Cameras</span><span>Back glass</span><span>Speakers &amp; mics</span><span>Water damage</span>
-          </div>
-          <a href="booking.html" class="btn btn-primary">Book a phone repair</a>
-        </div>
-      </section>
+          <article class="card reveal" data-tilt data-delay="0.06">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="16" height="8" rx="2"/><path d="M21 11v2M6 11v2h3v-2"/></svg>
+            </div>
+            <h3>Battery Replacement</h3>
+            <p>Draining fast, shutting down randomly, or swollen? We fit genuine-grade cells and verify health at 100% before hand-back.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">From ~30 min · all major brands</p>
+          </article>
 
-      <!-- Laptops -->
-      <section class="service-block flip" id="laptops" aria-labelledby="laptops-title">
-        <div class="sb-media reveal">
-          <img src="images/phone2.png" alt="Microscope-assisted logic board repair" loading="lazy" />
-        </div>
-        <div class="sb-copy">
-          <span class="overline">Laptops &amp; computers</span>
-          <h2 id="laptops-title">MacBook &amp; PC laptop repair</h2>
-          <p>From cracked panels to slow startups, we handle the laptop repairs most shops send away — for both Mac and Windows machines.</p>
-          <div class="sb-tags">
-            <span>Screen replacement</span><span>Keyboard &amp; trackpad</span><span>Battery service</span>
-            <span>SSD &amp; RAM upgrades</span><span>Liquid damage</span><span>Tune-ups &amp; malware removal</span>
-          </div>
-          <a href="booking.html" class="btn btn-primary">Book a laptop repair</a>
-        </div>
-      </section>
+          <article class="card reveal" data-tilt data-delay="0.12">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7c3.3 4 6.3 7.2 6.3 11a6.3 6.3 0 1 1-12.6 0c0-3.8 3-7 6.3-11z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+            </div>
+            <h3>Water Damage Treatment</h3>
+            <p>Dropped it in the sink, pool or worse? Ultrasonic cleaning and corrosion treatment save most devices — the sooner you bring it, the better.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">24–48 h</p>
+          </article>
 
-      <!-- Tablets -->
-      <section class="service-block" id="tablets" aria-labelledby="tablets-title">
-        <div class="sb-media reveal">
-          <img src="images/phone3.png" alt="Precision repair of an open tablet with tweezers" loading="lazy" />
-        </div>
-        <div class="sb-copy">
-          <span class="overline">Tablets</span>
-          <h2 id="tablets-title">iPad &amp; tablet repair</h2>
-          <p>Tablet glass is delicate work — we use heated separation and proper adhesives so your repair looks factory-fresh and stays sealed.</p>
-          <div class="sb-tags">
-            <span>Glass digitizer</span><span>LCD replacement</span><span>Battery</span>
-            <span>Charging port</span><span>Bent frame correction</span>
-          </div>
-          <a href="booking.html" class="btn btn-primary">Book a tablet repair</a>
-        </div>
-      </section>
+          <article class="card reveal" data-tilt>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+            </div>
+            <h3>Camera &amp; Speaker Repair</h3>
+            <p>Blurry camera, muffled speaker or a mic nobody can hear — cleaned, re-seated or replaced, then tested on a real call.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">From ~45 min</p>
+          </article>
 
-      <!-- Watches -->
-      <section class="service-block flip" id="watches" aria-labelledby="watches-title">
-        <div class="sb-media reveal">
-          <img src="images/phone1.png" alt="Small precision electronics repair tools on the bench" loading="lazy" />
-        </div>
-        <div class="sb-copy">
-          <span class="overline">Wearables</span>
-          <h2 id="watches-title">Apple Watch &amp; smartwatch repair</h2>
-          <p>Tiny screens, tiny batteries, tiny margins for error. We repair Apple Watch (Series 4 through Ultra) plus Samsung and Garmin wearables.</p>
-          <div class="sb-tags">
-            <span>Cracked screen</span><span>Battery replacement</span><span>Force-touch gasket</span><span>Button repair</span>
-          </div>
-          <a href="booking.html" class="btn btn-primary">Book a watch repair</a>
-        </div>
-      </section>
+          <article class="card reveal" data-tilt data-delay="0.06">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5" transform="rotate(180 12 12)"/><path d="M13 5h-2M15 12l-6 6"/></svg>
+            </div>
+            <h3>Back Glass Replacement</h3>
+            <p>Shattered back glass replaced cleanly and safely, keeping your phone water-resistant and looking new again.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">Same-day on most models</p>
+          </article>
 
-      <!-- Consoles -->
-      <section class="service-block" id="consoles" aria-labelledby="consoles-title">
-        <div class="sb-media reveal">
-          <img src="images/phone2.png" alt="Soldering work on an electronics mainboard" loading="lazy" />
-        </div>
-        <div class="sb-copy">
-          <span class="overline">Game consoles</span>
-          <h2 id="consoles-title">PlayStation, Xbox &amp; Switch repair</h2>
-          <p>HDMI ports are our most common console job — a precision soldering repair that saves you from replacing the whole console.</p>
-          <div class="sb-tags">
-            <span>HDMI port</span><span>Overheating &amp; fan cleaning</span><span>Disc drive</span>
-            <span>Power issues</span>
-          </div>
-          <a href="booking.html" class="btn btn-primary">Book a console repair</a>
-        </div>
-      </section>
+          <article class="card reveal" data-tilt data-delay="0.12">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 8l3-3M12 8L9 5"/><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M9 15h6"/></svg>
+            </div>
+            <h3>Charging Port Repair</h3>
+            <p>Loose cable, slow charging, or nothing at all. We clean, re-flow or replace charging ports and test at full current.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">From ~40 min</p>
+          </article>
 
-    </div>
+          <article class="card reveal" data-tilt>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+            </div>
+            <h3>Laptop Repair</h3>
+            <p>Screens, keyboards, batteries, fans and upgrades for MacBooks and Windows laptops alike.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">MacBooks &amp; Windows</p>
+          </article>
 
-    <!-- CTA -->
-    <section class="cta-band" aria-labelledby="cta-title">
-      <div class="cta-band-inner">
-        <div>
-          <h2 id="cta-title">Not sure what's wrong with it?</h2>
-          <p>Bring it in — diagnostics are free and you'll get a firm quote before we touch a screw.</p>
-        </div>
-        <div class="cta-band-actions">
-          <a href="booking.html" class="btn btn-primary">Book a Repair</a>
-          <a href="tel:+17046154536" class="btn btn-light">Call (704) 615-4536</a>
+          <article class="card reveal" data-tilt data-delay="0.06">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2.5"/><path d="M10 18h4"/></svg>
+            </div>
+            <h3>Tablet Repair</h3>
+            <p>iPads and Android tablets: digitizers, batteries, charge ports and board work — handled with the same precision as phones.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">Most within 24 h</p>
+          </article>
+
+          <article class="card reveal" data-tilt data-delay="0.12">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.36a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.64 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H9a1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V9c.24.6.83 1 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>Other Electronics</h3>
+            <p>Consoles, smartwatches, earbuds and more — bring it in and we'll take a look, with a clear quote before we touch anything.</p>
+            <p class="text-muted" style="margin-top:12px; font-size:0.88rem;">Ask in store</p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- ======== REPAIR VIDEO BAND ======== -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="media-band reveal" style="aspect-ratio: 21/9;">
+          <video src="videos/back-cover.mp4" data-autoplay-view data-rate="0.6" muted playsinline loop preload="metadata" aria-label="Opening the back cover of a phone on the repair bench"></video>
+          <div class="band-overlay">
+            <div>
+              <span class="eyebrow">On the bench</span>
+              <h3 class="display-md" style="margin-top:8px;">Every device opened with care.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FAQ ======== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="display-lg">Good <span class="text-gradient">questions.</span></h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>How long does a typical repair take?</summary>
+            <p>Screens and batteries are usually done in 30–60 minutes. Water damage and more complex repairs take 1–3 days depending on severity. We'll always give you a time estimate up front.</p>
+          </details>
+          <details>
+            <summary>Do you use original parts?</summary>
+            <p>We stock genuine and premium-grade parts and will always tell you exactly which is being fitted, with pricing for both where available.</p>
+          </details>
+          <details>
+            <summary>Is my data safe during repair?</summary>
+            <p>Yes. We never need your passcode for hardware repairs unless testing requires it (we'll ask first). Your data never leaves your device, and we're happy to repair with data privacy mode on request.</p>
+          </details>
+          <details>
+            <summary>What does the warranty cover?</summary>
+            <p>Most repairs include a 90-day warranty covering the part we installed and the work we performed. Accidental damage after the repair isn't covered — but we'll always look after you on price.</p>
+          </details>
+          <details>
+            <summary>What if you can't fix it?</summary>
+            <p>Diagnostics are free on most repairs — if we can't fix it, you won't pay for the attempt.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CTA ======== -->
+    <section class="section-sm" style="padding-bottom: var(--space-3xl);">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="display-lg">Know the price <span class="text-gradient">before we start.</span></h2>
+          <p class="lead">Tell us what's wrong — we'll tell you exactly what it costs. No surprises.</p>
+          <a href="contact.html#book" class="btn btn-primary">
+            Book a Repair
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- ======== FOOTER ======== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand"><svg class="logo-lockup" viewBox="0 0 384 64" preserveAspectRatio="xMinYMid meet" aria-hidden="true" focusable="false"><rect x="19" y="5" width="26" height="50" rx="7" fill="none" stroke="currentColor" stroke-width="4"/><rect x="28" y="10" width="8" height="2.5" rx="1.25" fill="currentColor"/><polyline points="2,30 20,30 25,22 31,40 36,16 40,34 44,30 62,30" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="47" cy="50" r="11" fill="#2563EB"/><svg x="40.5" y="43.5" width="13" height="13" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><text x="74" y="42" font-family="'Sora', system-ui, sans-serif" font-size="27" font-weight="700" letter-spacing="1" fill="currentColor">MOBILE <tspan fill="#2563EB">FIX</tspan> LAB</text></svg></div>
-          <p class="footer-about">Professional electronics repair for the Charlotte area — phones, laptops, tablets, wearables and consoles, all under one roof.</p>
+          <a href="index.html" class="footer-logo" aria-label="Mobile Fix Lab home">
+            <img src="images/logo-nav.png" alt="Mobile Fix Lab logo">
+          </a>
+          <p>Precision electronics repair for phones, tablets, laptops and more. Friendly same-day service and a 90-day warranty on most repairs. Serving Charlotte, Mint Hill &amp; Matthews, NC.</p>
         </div>
-        <div class="footer-col">
+        <nav aria-label="Footer — pages">
           <h4>Pages</h4>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="before-after.html">Before &amp; After</a>
-          <a href="booking.html">Book a Repair</a>
-          <a href="index.html#pricing">Pricing</a>
-        </div>
-        <div class="footer-col">
-          <h4>Popular repairs</h4>
-          <a href="services.html#phones">iPhone screens</a>
-          <a href="services.html#laptops">Laptop repair</a>
-          <a href="services.html#tablets">iPad repair</a>
-          <a href="services.html#consoles">Console repair</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="tel:+17046154536">(704) 615-4536</a>
-          <a href="mailto:mobilefixlab9@gmail.com">mobilefixlab9@gmail.com</a>
-          <span>Mon – Sat: 10 AM – 7 PM</span>
-          <span>11205 Lawyers Rd Suite A, Mint Hill, NC 28227</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer — services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Screen Repair</a></li>
+            <li><a href="services.html">Battery Replacement</a></li>
+            <li><a href="services.html">Charging Port Repair</a></li>
+            <li><a href="services.html">Water Damage</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Visit us</h4>
+          <ul>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=11205+Lawyers+Rd+Suite+A+Mint+Hill+NC+28227" target="_blank" rel="noopener">11205 Lawyers Rd Suite A,<br>Mint Hill, NC 28227</a></li>
+            <li><a href="tel:+17046154536">(704) 615-4536</a></li>
+            <li><a href="mailto:mobilefixlab9@gmail.com">mobilefixlab9@gmail.com</a></li>
+            <li><span class="text-muted" style="font-size:0.95rem;">Mon–Sat · 10:00 AM – 7:00 PM</span></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Mobile Fix Lab. All rights reserved.</span>
-        <span>Fast · Reliable · Guaranteed</span>
+        <span>© <span data-year>2026</span> Mobile Fix Lab. All rights reserved.</span>
+        <span>Precision electronics repair — done right.</span>
       </div>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

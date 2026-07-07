@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(command -v uipro)",
+      "Bash(uipro --version)",
+      "Bash(echo \"---exit:$?\")",
+      "WebSearch",
+      "Bash(npm install *)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Get-Command node,npm,winget,choco -ErrorAction SilentlyContinue | Select-Object Name,Source; Write-Output \"--- checking common install dirs ---\"; Test-Path \"C:\\\\Program Files\\\\nodejs\\\\node.exe\"; Test-Path \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\")",
+      "PowerShell(winget install OpenJS.NodeJS.LTS --accept-source-agreements --accept-package-agreements --silent -e)"
+    ]
+  }
+}
