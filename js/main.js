@@ -285,9 +285,12 @@
   if (hero && hasGsap && !prefersReducedMotion) {
     var tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
     tl.from('.hero-badge', { y: 24, opacity: 0, duration: 0.9 }, 0.1)
+      .from('.ba-hero-figure img', { y: 32, opacity: 0, duration: 1.1 }, 0.05)
+      .from('.ba-hero-label', { y: 18, opacity: 0, duration: 0.8, stagger: 0.12 }, 0.3)
       .from('.hero-title', { y: 60, opacity: 0, duration: 1.2 }, 0.22)
       .from('.hero .lead', { y: 32, opacity: 0, duration: 1 }, 0.42)
       .from('.hero-ctas', { y: 24, opacity: 0, duration: 0.9 }, 0.58)
+      .from('.ba-hero-local', { opacity: 0, duration: 1 }, 0.8)
       .from('.hero-scroll-hint', { opacity: 0, duration: 1 }, 1.0);
   }
 
