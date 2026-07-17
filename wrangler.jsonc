@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mobilelab",
+  "compatibility_date": "2026-07-17",
+
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+
+  "routes": [
+    {
+      "pattern": "mobilefixlabs.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.mobilefixlabs.com",
+      "custom_domain": true
+    }
+  ]
+}
