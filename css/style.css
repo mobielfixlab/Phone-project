@@ -75,6 +75,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 16px); /* keep anchored sections clear of the fixed nav */
   -webkit-text-size-adjust: 100%;
 }
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact &amp; Booking — Mobile Fix Lab | Mint Hill, NC</title>
+  <title>Book a Phone Repair in Mint Hill, NC — Contact Mobile Fix Lab</title>
   <meta name="description" content="Book a repair with Mobile Fix Lab or visit us at 11205 Lawyers Rd Suite A, Mint Hill, NC 28227. Open Mon–Sat 10 AM – 7 PM. Call or text (704) 615-4536.">
   <link rel="canonical" href="https://mobilefixlab.com/contact.html">
   <meta property="og:type" content="website">
@@ -37,7 +37,7 @@
       <ul class="nav-links" id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="before-after.html">Before &amp; After</a></li>
+        <!-- hidden for now: <li><a href="before-after.html">Before &amp; After</a></li> -->
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" aria-current="page">Contact</a></li>
         <li><a href="#book" class="btn btn-primary">Book a Repair</a></li>
@@ -191,6 +191,57 @@
         </div>
       </div>
     </section>
+
+    <!-- ======== FREE QUOTE ======== -->
+    <section class="section-sm" id="quote">
+      <div class="container">
+        <div class="card reveal" style="padding: var(--space-lg); max-width: 760px; margin: 0 auto;">
+          <h2 class="display-md" style="margin-bottom: 8px;">Get a free quote</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-md);">Not ready to book? Tell us what's broken and we'll send you a price — usually within a few hours, no obligation.</p>
+
+          <div class="form-success" role="status" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+            Request received! We'll send your quote shortly.
+          </div>
+
+          <form id="quote-form" class="form-grid" action="https://formsubmit.co/mobilefixlab9@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New quote request — mobilefixlab.com">
+            <input type="hidden" name="_template" value="table">
+            <div class="field">
+              <label for="q-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="q-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+              <span class="error-msg" role="alert">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="q-contact">Phone or email <span class="req" aria-hidden="true">*</span></label>
+              <input id="q-contact" name="contact" type="text" placeholder="(704) 555-0123 or you@example.com" required>
+              <span class="error-msg" role="alert">Please enter a phone number or email.</span>
+            </div>
+            <div class="field full">
+              <label for="q-device">Device <span class="req" aria-hidden="true">*</span></label>
+              <select id="q-device" name="device" required>
+                <option value="" selected disabled>Select device…</option>
+                <option>Phone</option>
+                <option>Tablet</option>
+                <option>Laptop</option>
+                <option>Smartwatch</option>
+                <option>Game console</option>
+                <option>Other electronics</option>
+              </select>
+              <span class="error-msg" role="alert">Please choose a device type.</span>
+            </div>
+            <div class="field full">
+              <label for="q-issue">What's wrong? <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="q-issue" name="issue" placeholder="e.g. iPhone 14 — cracked screen, touch still works" required style="min-height: 90px;"></textarea>
+              <span class="error-msg" role="alert">Please describe the issue briefly.</span>
+            </div>
+            <div class="field full">
+              <button type="submit" class="btn btn-primary" style="width:100%;">Get My Free Quote</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ======== FOOTER ======== -->
@@ -201,26 +252,30 @@
           <a href="index.html" class="footer-logo" aria-label="Mobile Fix Lab home">
             <img src="images/logo-nav.png" alt="Mobile Fix Lab logo">
           </a>
-          <p>Precision electronics repair for phones, tablets, laptops and more. Friendly same-day service and a 90-day warranty on most repairs. Serving Charlotte, Mint Hill &amp; Matthews, NC.</p>
+          <p>Precision electronics repair for phones, tablets, laptops and more. Friendly same-day service and a 90-day warranty on most repairs. Serving Mint Hill, Matthews, Charlotte, Indian Trail &amp; Stallings, NC.</p>
         </div>
         <nav aria-label="Footer — pages">
           <h4>Pages</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="before-after.html">Before &amp; After</a></li>
+            <!-- hidden for now: <li><a href="before-after.html">Before &amp; After</a></li> -->
             <li><a href="tips.html">Repair Tips</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="areas-we-serve.html">Areas We Serve</a></li>
           </ul>
         </nav>
         <nav aria-label="Footer — services">
           <h4>Services</h4>
           <ul>
-            <li><a href="services.html">Screen Repair</a></li>
-            <li><a href="services.html">Battery Replacement</a></li>
+            <li><a href="iphone-screen-repair-mint-hill.html">iPhone Screen Repair</a></li>
+            <li><a href="phone-battery-replacement-mint-hill.html">Battery Replacement</a></li>
             <li><a href="services.html">Charging Port Repair</a></li>
             <li><a href="services.html">Water Damage</a></li>
+            <li><a href="ipad-repair-mint-hill.html">iPad &amp; Tablet Repair</a></li>
+            <li><a href="laptop-repair-mint-hill.html">Laptop Repair</a></li>
+            <li><a href="ps5-hdmi-repair.html">PS5 HDMI Repair</a></li>
           </ul>
         </nav>
         <div>

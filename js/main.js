@@ -294,9 +294,8 @@
       .from('.hero-scroll-hint', { opacity: 0, duration: 1 }, 1.0);
   }
 
-  /* ---------- Booking form (demo submit) ---------- */
-  var form = document.querySelector('#booking-form');
-  if (form) {
+  /* ---------- Booking & quote forms (demo submit) ---------- */
+  document.querySelectorAll('#booking-form, #quote-form').forEach(function (form) {
     // preferred date: today or later
     var dateInput = form.querySelector('input[type="date"]');
     if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
@@ -326,7 +325,8 @@
       }
 
       var btn = form.querySelector('button[type="submit"]');
-      var success = document.querySelector('.form-success');
+      var btnLabel = btn ? btn.textContent : '';
+      var success = form.parentElement.querySelector('.form-success');
       if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
 
       fetch(form.action, {
@@ -344,7 +344,7 @@
       }).catch(function () {
         alert('Something went wrong sending your request. Please try again, or call (704) 615-4536.');
       }).finally(function () {
-        if (btn) { btn.disabled = false; btn.textContent = 'Book a Repair'; }
+        if (btn) { btn.disabled = false; btn.textContent = btnLabel; }
       });
     });
 
@@ -355,7 +355,7 @@
         if (field && input.value.trim()) field.classList.remove('invalid');
       });
     });
-  }
+  });
 
   /* ---------- Before / after comparison sliders ---------- */
   document.querySelectorAll('.ba-slider').forEach(function (slider) {
