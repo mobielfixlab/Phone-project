@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mobilefixlab.com/sitemap.xml
+Sitemap: https://mobilefixlabs.com/sitemap.xml
