@@ -294,7 +294,7 @@
       .from('.hero-scroll-hint', { opacity: 0, duration: 1 }, 1.0);
   }
 
-  /* ---------- Booking & quote forms (demo submit) ---------- */
+  /* ---------- Booking & quote forms (Formspree) ---------- */
   document.querySelectorAll('#booking-form, #quote-form').forEach(function (form) {
     // preferred date: today or later
     var dateInput = form.querySelector('input[type="date"]');

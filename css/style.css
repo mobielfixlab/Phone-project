@@ -186,10 +186,11 @@ h1, h2, h3, h4 {
   max-width: 720px;
 }
 
-.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-lg); }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); }
 
 @media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
@@ -825,7 +826,7 @@ h1, h2, h3, h4 {
 .faq details p { padding: 0 24px 20px; color: var(--fg-muted); }
 
 /* ---------- Forms ---------- */
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-sm); }
 @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
 
 .field { display: flex; flex-direction: column; gap: 8px; }
@@ -837,6 +838,8 @@ h1, h2, h3, h4 {
 }
 .field label .req { color: var(--accent); }
 .field input, .field select, .field textarea {
+  width: 100%;
+  min-width: 0;
   min-height: 52px;
   padding: 14px 18px;
   border-radius: var(--radius-md);
