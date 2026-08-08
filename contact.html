@@ -131,6 +131,21 @@
                 <span class="error-msg" role="alert">Please choose a device type.</span>
               </div>
               <div class="field">
+                <label for="f-service-location">Where should the repair happen? <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-service-location" name="service_location" data-service-location required>
+                  <option value="" selected disabled>Select an optionâ€¦</option>
+                  <option value="I will come to the store">I'll come to the store</option>
+                  <option value="Please come to me">Come to me</option>
+                </select>
+                <span class="error-msg" role="alert">Please choose a service location.</span>
+              </div>
+              <div class="field full" data-mobile-address hidden>
+                <label for="f-address">Service address <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-address" name="service_address" type="text" autocomplete="street-address" placeholder="Street address, city, state and ZIP">
+                <span class="hint">We'll confirm availability for your location.</span>
+                <span class="error-msg" role="alert">Please enter the address where you'd like us to come.</span>
+              </div>
+              <div class="field">
                 <label for="f-date">Preferred date <span class="req" aria-hidden="true">*</span></label>
                 <input id="f-date" name="date" type="date" required>
                 <span class="error-msg" role="alert">Please pick a preferred date.</span>
@@ -267,6 +282,21 @@
                 <option>Other electronics</option>
               </select>
               <span class="error-msg" role="alert">Please choose a device type.</span>
+            </div>
+            <div class="field full">
+              <label for="q-service-location">Where should the repair happen? <span class="req" aria-hidden="true">*</span></label>
+              <select id="q-service-location" name="service_location" data-service-location required>
+                <option value="" selected disabled>Select an optionâ€¦</option>
+                <option value="I will come to the store">I'll come to the store</option>
+                <option value="Please come to me">Come to me</option>
+              </select>
+              <span class="error-msg" role="alert">Please choose a service location.</span>
+            </div>
+            <div class="field full" data-mobile-address hidden>
+              <label for="q-address">Service address <span class="req" aria-hidden="true">*</span></label>
+              <input id="q-address" name="service_address" type="text" autocomplete="street-address" placeholder="Street address, city, state and ZIP">
+              <span class="hint">We'll confirm availability for your location.</span>
+              <span class="error-msg" role="alert">Please enter the address where you'd like us to come.</span>
             </div>
             <div class="field full">
               <label for="q-issue">What's wrong? <span class="req" aria-hidden="true">*</span></label>

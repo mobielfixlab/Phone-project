@@ -300,6 +300,26 @@
     var dateInput = form.querySelector('input[type="date"]');
     if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
 
+    // Ask for an address only when the customer requests mobile service.
+    var serviceLocation = form.querySelector('[data-service-location]');
+    var mobileAddressField = form.querySelector('[data-mobile-address]');
+    var mobileAddressInput = mobileAddressField ? mobileAddressField.querySelector('input') : null;
+
+    function updateServiceLocation() {
+      var needsAddress = serviceLocation && serviceLocation.value === 'Please come to me';
+      if (mobileAddressField) mobileAddressField.hidden = !needsAddress;
+      if (mobileAddressInput) {
+        mobileAddressInput.required = needsAddress;
+        if (!needsAddress) {
+          mobileAddressInput.value = '';
+          mobileAddressField.classList.remove('invalid');
+        }
+      }
+    }
+
+    if (serviceLocation) serviceLocation.addEventListener('change', updateServiceLocation);
+    updateServiceLocation();
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var valid = true;
@@ -336,6 +356,7 @@
       }).then(function (res) {
         if (!res.ok) throw new Error('Request failed: ' + res.status);
         form.reset();
+        updateServiceLocation();
         if (success) {
           success.classList.add('show');
           success.setAttribute('tabindex', '-1');
