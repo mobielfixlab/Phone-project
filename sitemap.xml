@@ -98,4 +98,8 @@
     <loc>https://mobilefixlabs.com/iphone-battery-replacement-signs.html</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://mobilefixlabs.com/privacy-policy.html</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
