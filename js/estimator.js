@@ -52,49 +52,49 @@
      means the value is `{ lcd, oled, oem }` instead of a single price.
      ------------------------------------------------------------------ */
   var PHONE_ISSUES = [
-    { label: "Screen repair",      icon: "💥", key: "screen", tiered: true },
-    { label: "Battery",            icon: "🔋", key: "battery" },
-    { label: "Back glass",         icon: "🪟", key: "backGlass" },
-    { label: "Charging port",      icon: "🔌", key: "chargingPort" },
-    { label: "Rear camera",        icon: "📷", key: "rearCamera" },
-    { label: "Water damage",       icon: "💧", key: "waterDamage" },
-    { label: "Board repair", icon: "💾", key: "boardRepair" },
-    { label: "Something else",     icon: "❓", isOther: true }
+    { label: "Screen repair",      icon: "🔳", key: "screen", tiered: true },
+    { label: "Battery",            icon: "🪫", key: "battery" },
+    { label: "Back glass",         icon: "🪞", key: "backGlass" },
+    { label: "Charging port",      icon: "🔗", key: "chargingPort" },
+    { label: "Rear camera",        icon: "📸", key: "rearCamera" },
+    { label: "Water damage",       icon: "🌊", key: "waterDamage" },
+    { label: "Board repair", icon: "🧩", key: "boardRepair" },
+    { label: "Something else",     icon: "➕", isOther: true }
   ];
 
   var TABLET_ISSUES = [
-    { label: "Glass / digitizer",  icon: "🪟", key: "glass" },
-    { label: "LCD / screen assembly", icon: "💥", key: "lcd" },
-    { label: "Battery",            icon: "🔋", key: "battery" },
-    { label: "Charging port",      icon: "🔌", key: "chargingPort" },
-    { label: "Board repair", icon: "💾", key: "boardRepair" },
-    { label: "Something else",     icon: "❓", isOther: true }
+    { label: "Glass / digitizer",  icon: "🪞", key: "glass" },
+    { label: "LCD / screen assembly", icon: "🔳", key: "lcd" },
+    { label: "Battery",            icon: "🪫", key: "battery" },
+    { label: "Charging port",      icon: "🔗", key: "chargingPort" },
+    { label: "Board repair", icon: "🧩", key: "boardRepair" },
+    { label: "Something else",     icon: "➕", isOther: true }
   ];
 
   var LAPTOP_ISSUES = [
-    { label: "Screen",             icon: "💥", key: "screen" },
-    { label: "Battery",            icon: "🔋", key: "battery" },
-    { label: "Keyboard",           icon: "⌨️", key: "keyboard" },
-    { label: "Liquid damage",      icon: "💧", key: "liquidDamage" },
-    { label: "Board repair",       icon: "🛠️", key: "boardRepair" },
-    { label: "Something else",     icon: "❓", isOther: true }
+    { label: "Screen",             icon: "🔳", key: "screen" },
+    { label: "Battery",            icon: "🪫", key: "battery" },
+    { label: "Keyboard",           icon: "🔤", key: "keyboard" },
+    { label: "Liquid damage",      icon: "🌊", key: "liquidDamage" },
+    { label: "Board repair",       icon: "🔧", key: "boardRepair" },
+    { label: "Something else",     icon: "➕", isOther: true }
   ];
 
   var CONSOLE_ISSUES = [
-    { label: "HDMI port",          icon: "🔌", key: "hdmi" },
-    { label: "Won't power on (diagnostic)", icon: "⚡", key: "noPower" },
-    { label: "Deep clean + thermal", icon: "🔥", key: "deepClean" },
-    { label: "Hazard fee (infestation/corrosion)", icon: "☣️", key: "hazard" },
-    { label: "Something else",     icon: "❓", isOther: true }
+    { label: "HDMI port",          icon: "🔗", key: "hdmi" },
+    { label: "Won't power on (diagnostic)", icon: "💡", key: "noPower" },
+    { label: "Deep clean + thermal", icon: "🌡️", key: "deepClean" },
+    { label: "Hazard fee (infestation/corrosion)", icon: "⚠️", key: "hazard" },
+    { label: "Something else",     icon: "➕", isOther: true }
   ];
 
   var WATCH_ISSUES = [
-    { label: "Cracked screen",     icon: "💥", key: "screen" },
-    { label: "Battery",            icon: "🔋", key: "battery" },
-    { label: "Back glass",         icon: "🪟", key: "backGlass" },
-    { label: "Water damage",       icon: "💧", key: "waterDamage" },
-    { label: "Won't turn on / board repair", icon: "⚡", key: "boardRepair" },
-    { label: "Something else",     icon: "❓", isOther: true }
+    { label: "Cracked screen",     icon: "🔳", key: "screen" },
+    { label: "Battery",            icon: "🪫", key: "battery" },
+    { label: "Back glass",         icon: "🪞", key: "backGlass" },
+    { label: "Water damage",       icon: "🌊", key: "waterDamage" },
+    { label: "Won't turn on / board repair", icon: "💡", key: "boardRepair" },
+    { label: "Something else",     icon: "➕", isOther: true }
   ];
 
   /* Quote-only repairs object shared by every model in a category with no
@@ -110,7 +110,7 @@
 
   var DEVICES = [
     {
-      label: "Phone", icon: "📱", issues: PHONE_ISSUES,
+      label: "Phone", icon: "📲", issues: PHONE_ISSUES,
       brands: [
         { label: "Apple", models: [
           { label: "iPhone 17 Pro Max", repairs: { screen: { lcd: 120, oled: 250, oem: 420 }, battery: 140, backGlass: 120, chargingPort: null, rearCamera: 170, waterDamage: "quote", boardRepair: "quote" } },
@@ -201,11 +201,11 @@
           { label: "Edge 50", repairs: ALL_QUOTE.phone }, { label: "Edge 40", repairs: ALL_QUOTE.phone },
           { label: "Moto G", repairs: ALL_QUOTE.phone }, { label: "Razr", repairs: ALL_QUOTE.phone }
         ]},
-        { label: "Other brand", icon: "❓", isOther: true }
+        { label: "Other brand", icon: "➕", isOther: true }
       ]
     },
     {
-      label: "Tablet", icon: "📟", issues: TABLET_ISSUES,
+      label: "Tablet", icon: "ipad", issues: TABLET_ISSUES,
       brands: [
         { label: "Apple", models: [
           { label: "iPad Pro 12.9\" 5th/6th Gen", repairs: { glass: null, lcd: 320, battery: 140, chargingPort: 120, boardRepair: "quote" } },
@@ -230,11 +230,11 @@
           { label: "Fire HD 10", repairs: ALL_QUOTE.tablet }, { label: "Fire HD 8", repairs: ALL_QUOTE.tablet }
         ]},
         { label: "Lenovo", models: [ { label: "Lenovo Tab", repairs: ALL_QUOTE.tablet } ] },
-        { label: "Other brand", icon: "❓", isOther: true }
+        { label: "Other brand", icon: "➕", isOther: true }
       ]
     },
     {
-      label: "Laptop", icon: "💻", issues: LAPTOP_ISSUES,
+      label: "Laptop", icon: "🖥️", issues: LAPTOP_ISSUES,
       brands: [
         /* Laptop repairs are quoted after an in-person or photo diagnostic —
            boards, panels and keyboards vary too much by exact SKU to price
@@ -251,11 +251,11 @@
         { label: "ASUS",   models: [ { label: "Any ASUS model", repairs: ALL_QUOTE.laptop } ] },
         { label: "Acer",   models: [ { label: "Any Acer model", repairs: ALL_QUOTE.laptop } ] },
         { label: "Microsoft Surface", models: [ { label: "Any Surface model", repairs: ALL_QUOTE.laptop } ] },
-        { label: "Other brand", icon: "❓", isOther: true }
+        { label: "Other brand", icon: "➕", isOther: true }
       ]
     },
     {
-      label: "Console", icon: "🎮", issues: CONSOLE_ISSUES,
+      label: "Console", icon: "🕹️", issues: CONSOLE_ISSUES,
       brands: [
         { label: "Sony", models: [
           { label: "PlayStation 5 / Slim / Pro", repairs: { hdmi: 130, noPower: "Up to $170", deepClean: 100, hazard: 60 } },
@@ -273,7 +273,7 @@
           { label: "Switch", repairs: ALL_QUOTE.console }, { label: "Switch Lite", repairs: ALL_QUOTE.console },
           { label: "Joy-Con pair", repairs: ALL_QUOTE.console }
         ]},
-        { label: "Other brand", icon: "❓", isOther: true }
+        { label: "Other brand", icon: "➕", isOther: true }
       ]
     },
     {
@@ -288,10 +288,10 @@
           { label: "Galaxy Watch Ultra", repairs: ALL_QUOTE.watch }, { label: "Galaxy Watch", repairs: ALL_QUOTE.watch }
         ]},
         { label: "Garmin", models: [ { label: "Garmin watch", repairs: ALL_QUOTE.watch } ] },
-        { label: "Other brand", icon: "❓", isOther: true }
+        { label: "Other brand", icon: "➕", isOther: true }
       ]
     },
-    { label: "Something else", icon: "❓", isOther: true }
+    { label: "Something else", icon: "➕", isOther: true }
   ];
 
   /* Which tier is "recommended" and carries DisplayShield (our 1-year
@@ -461,7 +461,11 @@
 
       var icon = el("span", "ifxest-opt-icon");
       icon.setAttribute("aria-hidden", "true");
-      icon.textContent = opt.icon || "•";
+      if (opt.icon === "ipad") {
+        icon.innerHTML = '<svg viewBox="0 0 32 42" width="22" height="28" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="28" height="38" rx="3"/><circle cx="16" cy="36" r="1.15" fill="currentColor" stroke="none"/></svg>';
+      } else {
+        icon.textContent = opt.icon || "•";
+      }
 
       var text = el("span", "ifxest-opt-text");
       var label = el("span", "ifxest-opt-label");

@@ -50,7 +50,8 @@
 }
 .ifxest-opt:hover{ border-color:var(--blue); transform:translateY(-1px); }
 .ifxest-opt-other{ border-style:dashed; color:var(--muted); }
-.ifxest-opt-icon{ font-size:1.3rem; line-height:1; flex:none; }
+.ifxest-opt-icon{ font-size:1.3rem; line-height:1; flex:none; display:grid; place-items:center; }
+.ifxest-opt-icon svg{ display:block; }
 .ifxest-opt-text{ display:flex; flex-direction:column; gap:2px; min-width:0; }
 .ifxest-opt-label{ font-weight:600; }
 .ifxest-opt-meta{ font-family:var(--mono); font-size:.78rem; color:var(--blue); }
