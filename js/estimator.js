@@ -113,9 +113,9 @@
       label: "Phone", icon: "📲", issues: PHONE_ISSUES,
       brands: [
         { label: "Apple", models: [
-          { label: "iPhone 17 Pro Max", repairs: { screen: { lcd: 120, oled: 180, oem: 420 }, battery: 140, backGlass: 120, chargingPort: null, rearCamera: 170, waterDamage: "quote", boardRepair: "quote" } },
-          { label: "iPhone 17 Pro", repairs: { screen: { lcd: 120, oled: 230, oem: 420 }, battery: 140, backGlass: 120, chargingPort: 160, rearCamera: 170, waterDamage: "quote", boardRepair: "quote" } },
-          { label: "iPhone 17", repairs: { screen: { lcd: 120, oled: 200, oem: 380 }, battery: 130, backGlass: 120, chargingPort: null, rearCamera: 150, waterDamage: "quote", boardRepair: "quote" } },
+          { label: "iPhone 17 Pro Max", repairs: { screen: { lcd: 120, oled: 180, oem: 420 }, battery: 140, backGlass: 120, chargingPort: 120, rearCamera: 170, waterDamage: "quote", boardRepair: "quote" } },
+          { label: "iPhone 17 Pro", repairs: { screen: { lcd: 120, oled: 160, oem: 420 }, battery: 140, backGlass: 120, chargingPort: 120, rearCamera: 170, waterDamage: "quote", boardRepair: "quote" } },
+          { label: "iPhone 17", repairs: { screen: { lcd: 120, oled: 200, oem: 380 }, battery: 130, backGlass: 120, chargingPort: 120, rearCamera: 150, waterDamage: "quote", boardRepair: "quote" } },
           { label: "iPhone 17e", repairs: { screen: { lcd: 90, oled: 160, oem: 180 }, battery: 100, backGlass: 120, chargingPort: 120, rearCamera: 130, waterDamage: "quote", boardRepair: "quote" } },
           { label: "iPhone Air", repairs: { screen: { lcd: null, oled: 230, oem: 380 }, battery: 130, backGlass: 120, chargingPort: 150, rearCamera: 170, waterDamage: "quote", boardRepair: "quote" } },
           { label: "iPhone 16 Pro Max", repairs: { screen: { lcd: 110, oled: 230, oem: 400 }, battery: 120, backGlass: 120, chargingPort: 140, rearCamera: 140, waterDamage: "quote", boardRepair: "quote" } },
